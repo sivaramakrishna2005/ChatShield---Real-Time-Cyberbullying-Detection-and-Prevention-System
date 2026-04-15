@@ -1,212 +1,218 @@
-# ChatShield – Real-Time Cyberbullying Detection and Prevention System
+<div align="center">
 
-## Protecting Digital Conversations Through Intelligent Moderation
+# 🛡️ ChatShield
 
-ChatShield is an advanced real-time cyberbullying detection and prevention system developed to improve the safety of online communication platforms. The application monitors live chat messages, analyzes user input using dataset-driven text filtering and multilingual text normalization, blocks harmful or abusive messages before delivery, and provides instant alerts to both sender and receiver with bullying type categorization.
+### Real-Time Cyberbullying Detection and Prevention System
 
-The system is designed to support modern communication patterns including Hinglish, multilingual slang, offensive abbreviations, and informal texting language, making it highly adaptable for real-world chat environments.
+<p align="center">
+  <strong>Protecting Digital Conversations Through Intelligent Moderation</strong>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"/>
+  <img src="https://img.shields.io/badge/GUI-Tkinter-green?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Socket-Programming-orange?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-Academic-lightgrey?style=for-the-badge"/>
+</p>
+
+</div>
 
 ---
 
-## Project Architecture
+# 📌 Overview
+
+ChatShield is an advanced **real-time cyberbullying detection and prevention system** developed to improve the safety of digital communication platforms.
+It monitors live chat messages, detects abusive/offensive content using **dataset-driven filtering**, blocks harmful messages before delivery, and instantly alerts users with **bullying type classification**.
+
+Built to support **modern communication styles**, ChatShield can identify:
+
+✔ Hinglish Bullying
+✔ Abbreviations / Slang
+✔ Masked Offensive Words
+✔ Mixed-language Toxicity
+
+---
+
+# 🏗️ System Architecture
 
 <p align="center">
-  <img src="images/Chatshield Architecture diagram.png" width="850"/>
+  <img src="images/chatshield_architecture.png" width="900"/>
 </p>
 
 ---
 
-## System Block Diagram
+# 🔄 Block Diagram
 
 <p align="center">
-  <img src="images/CHATSHIELD Block diagram.png" width="850"/>
+  <img src="images/chatshield_blockdiagram.png" width="900"/>
 </p>
 
 ---
 
-## Graphical User Interface
+# 🖥️ User Interface
 
-### Registration Interface
-
-<p align="center">
-  <img src="images/GUI 1.png" width="700"/>
-</p>
-
-### Login Interface
+## 📝 Register Screen
 
 <p align="center">
-  <img src="images/GUI 2.png" width="700"/>
+  <img src="images/gui_register.png" width="750"/>
 </p>
 
 
----
-
-## Output Demonstration
-
-### Safe Message Communication
+## 🔐 Login Screen
 
 <p align="center">
-  <img src="images/Output 1.png" width="850"/>
-</p>
-
-### Blocked Cyberbullying Detection Output
-
-<p align="center">
-  <img src="images/Output 2.png" width="850"/>
+  <img src="images/gui_login.png" width="750"/>
 </p>
 
 ---
 
-## Model Evaluation Metrics
+# 💬 Output Demonstration
 
-### Proposed Model Accuracy Graph
-
-<p align="center">
-  <img src="images/chatshield_existing_vs_proposed_monochrome_updated.png" width="700"/>
-</p>
-
-### Performance Comparison Graph
+## ✅ Safe Message Output
 
 <p align="center">
-  <img src="images/chatshield_model_performance_monochrome_updated.png" width="700"/>
+  <img src="images/output_safe.png" width="850"/>
+</p>
+
+## 🚫 Blocked Message Output
+
+<p align="center">
+  <img src="images/output_blocked.png" width="850"/>
 </p>
 
 ---
 
-## Core Features
+# 📊 Performance Analysis
 
-### Real-Time Message Monitoring
+## 📈 Accuracy Comparison
 
-* Continuously monitors all incoming and outgoing chat messages before transmission.
+<p align="center">
+  <img src="images/accuracy_graph.png" width="700"/>
+</p>
 
-### Cyberbullying Detection
+## ⚡ Model Performance
 
-* Detects harmful, abusive, offensive, and threatening text instantly.
-
-### Hinglish Language Support
-
-* Recognizes bullying messages written in mixed Hindi-English (Hinglish) format.
-* Example: “Tu bahut useless hai”, “Pagal idiot”, etc.
-
-### Slang & Abbreviation Recognition
-
-* Detects offensive slang, short forms, and masked abusive words.
-* Example: "idi0t", "stup!d", "f00l".
-
-### Dataset-Driven Filtering
-
-* Compares chat messages against a structured cyberbullying/offensive dataset.
-
-### Bullying Type Classification
-
-* Categorizes detected bullying into types such as:
-
-  * Harassment
-  * Toxicity
-  * Insult
-  * Threat
-  * Hate Speech
-
-### Message Blocking Mechanism
-
-* Automatically blocks flagged messages before delivery.
-
-### Instant Warning Alerts
-
-* Sends warning notifications to both sender and receiver.
-
-### User-Friendly GUI
-
-* Interactive chat interface with modern design.
-
-### Client-Server Communication
-
-* Supports real-time multi-user communication through socket programming.
-
-### Authentication Module
-
-* Login/Register system for secure user access.
+<p align="center">
+  <img src="images/performance_graph.png" width="700"/>
+</p>
 
 ---
 
-## Workflow
+# ✨ Key Features
 
-1. User enters message in chat interface
-2. System preprocesses text input
-3. Hinglish/slang normalization applied
-4. Message checked against bullying dataset
-5. Classification logic determines bullying type
-6. If harmful:
+<details>
+<summary><strong>📌 Click to Expand Features</strong></summary>
 
-   * Message blocked
-   * Alert displayed
-   * Type identified
-7. Else:
+### 🕒 Real-Time Monitoring
 
-   * Message delivered successfully
+* Scans every message instantly before delivery
+
+### 🚨 Cyberbullying Detection
+
+* Detects abusive/offensive language in chats
+
+### 🌐 Hinglish Support
+
+* Detects Hindi-English mixed bullying messages
+
+### 🔍 Slang Recognition
+
+* Identifies masked/abbreviated offensive words
+
+### 🧠 Bullying Classification
+
+Classifies bullying into:
+
+* Harassment
+* Toxicity
+* Insult
+* Threat
+* Hate Speech
+
+### 🚫 Auto Blocking
+
+* Blocks flagged messages automatically
+
+### 🔔 Instant Alerts
+
+* Warns sender and receiver immediately
+
+### 🔐 Authentication
+
+* Secure Login/Register System
+
+### 🌍 Multi-User Support
+
+* Client-server communication using sockets
+
+</details>
 
 ---
 
-## Technology Stack
+# ⚙️ Workflow
 
-| Technology         | Purpose                     |
-| ------------------ | --------------------------- |
-| Python             | Core Programming Language   |
-| Tkinter            | GUI Development             |
-| Socket Programming | Client-Server Communication |
-| Dataset Filtering  | Text Analysis               |
-| Git/GitHub         | Version Control             |
-| VS Code            | Development Environment     |
+```text id="mgsvrn"
+User Message → Preprocessing → Hinglish/Slang Normalization 
+→ Dataset Filtering → Classification → Block/Allow → Alert Generation
+```
 
 ---
 
-## Installation & Setup
+# 🛠️ Tech Stack
+
+| Technology         | Usage            |
+| ------------------ | ---------------- |
+| Python             | Core Development |
+| Tkinter            | GUI Framework    |
+| Socket Programming | Networking       |
+| Dataset Filtering  | Detection Logic  |
+| Git/GitHub         | Version Control  |
+
+---
+
+# 🚀 Installation
 
 ### Clone Repository
 
-```bash
-git clone https://github.com/your-username/chatshield-cyberbullying-detection-system.git
-```
-
-### Navigate to Project Folder
-
-```bash
-cd chatshield-cyberbullying-detection-system
+```bash id="lbg8ux"
+git clone https://github.com/sivaramakrishna2005/chatshield-cyberbullying-detection-system.git
 ```
 
 ### Run Server
 
-```bash
+```bash id="8lg8q5"
 python server.py
 ```
 
 ### Run Client
 
-```bash
+```bash id="d6zjlwm"
 python clientgui.py
 ```
 
 ---
 
-## Future Enhancements
+# 🔮 Future Enhancements
 
-* Machine Learning Based Detection
-* NLP Sentiment Analysis
-* Voice Chat Moderation
-* Cloud Deployment
-* Admin Monitoring Dashboard
-* Database Integration
-* Mobile Application Support
+* 🤖 Machine Learning Integration
+* ☁ Cloud Deployment
+* 📊 Admin Dashboard
+* 🌎 Full Multilingual Detection
+* 📱 Mobile Application
 
 ---
 
-## Author
+# 👨‍💻 Author
 
-**Siva Rama Krishna Naidu**
+### **Siva Rama Krishna Naidu**
+
 Computer Science Engineering Student
 
 ---
 
-## License
+<div align="center">
 
-This project is developed for academic, educational, and research purposes.
+### ⭐ If you like this project, give it a star on GitHub ⭐
+
+</div>
