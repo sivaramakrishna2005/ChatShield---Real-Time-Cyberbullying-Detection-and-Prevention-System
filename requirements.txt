@@ -1,0 +1,7 @@
+Flask
+scikit-learn
+numpy
+pandas
+customtkinter
+pyngrok
+qrcode[pil]
