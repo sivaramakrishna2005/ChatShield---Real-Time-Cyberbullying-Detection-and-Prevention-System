@@ -1,160 +1,212 @@
-# CyberBullying-Detection-in-Hinglish-Languages-Using-Machine-Learning-
+# ChatShield – Real-Time Cyberbullying Detection and Prevention System
 
-<img src="output/why_topic.png" width="520" >
+## Protecting Digital Conversations Through Intelligent Moderation
 
-## Table of Content
+ChatShield is an advanced real-time cyberbullying detection and prevention system developed to improve the safety of online communication platforms. The application monitors live chat messages, analyzes user input using dataset-driven text filtering and multilingual text normalization, blocks harmful or abusive messages before delivery, and provides instant alerts to both sender and receiver with bullying type categorization.
 
- 1. Aim
- 2. Learning-Objective
- 3. problem statement
- 4. Technologies-used
- 5. Design flow
- 6. block diagram
- 7. Technical-aspects
- 8. Result and Discussion
- 9. Design and Architecture of Chat Prediction Service
- 10. User Interface design
- 11. installation
+The system is designed to support modern communication patterns including Hinglish, multilingual slang, offensive abbreviations, and informal texting language, making it highly adaptable for real-world chat environments.
 
+---
 
-### Aim :- 
+## Project Architecture
 
-Our proposed idea contributes to solving the problem by identifying and classifying text or messages of an intimidating or threatening nature. Our aim was to build a model to classify or identify cyberbullying in English and Hinglish languages and to build a Chat application which can predict whether the text entered in group chats is bullying or non-bullying. 
+<p align="center">
+  <img src="images/Chatshield Architecture diagram.png" width="850"/>
+</p>
 
-<img src="output/objective.png" width="480" >
+---
 
-### Learning Objective :- 
+## System Block Diagram
 
-The following points were the objective of the project . If you are looking for all the following points in this repo then i have not covered all in this repo. I'm working on blog about this mini project and I'll update the link of blog about all the points in details later .(The main intention was to create an end-to-end group chat application which can predict whether the text entered in groups is bullying or non-bullying.)  
-The main Objective of the project are:
-- Extracting real time data from social media sites.
-- Selecting best feature extraction model in text classification between Count Vectorization(CV) and Term Frequency-Inverse Frequency in document(TF-IDF)
-- Building various Machine Learning Model using Training dataset.
-- Selecting best model by comparing accuracy, precision, f1 score and recall.
-- perform predictions on testing data and analyze the results.
-- Building and Deployment group chat-application.
+<p align="center">
+  <img src="images/CHATSHIELD Block diagram.png" width="850"/>
+</p>
 
-### problem statement ?
+---
 
-- As an issue that poses an increased threat to the younger generation, cyberbullying requires critical monitoring on various social media platforms. The existing solutions are incapable to keep up with the escalation of online bullying. Text matching technique has been widely used in these solutions which does not provide accurate results.
-- Thus we want to develop a model that can detect offensive or hateful words in English and Hinglish language. We want our model to be highly accurate    and fast. This model can help detect Cyberbullying on various social media networking websites.
+## Graphical User Interface
 
-### Technologies Used :- 
+### Registration Interface
 
-![](https://forthebadge.com/images/badges/made-with-python.svg) 
+<p align="center">
+  <img src="images/GUI 1.png" width="700"/>
+</p>
 
-[<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=100>
-<img target="_blank" src="https://backendless.com/wp-content/uploads/2020/04/twilio-logo.png" width=70>
-<img target="_blank" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/scikit-learn/scikit-learn.png" width=90>
-<img target="_blank" src="https://github.com/ditikrushna/End-to-End-Diabetes-Prediction-Application-Using-Machine-Learning/blob/master/Resource/numpy.png" width=120>
-<img target="_blank" src="https://github.com/ditikrushna/End-to-End-Diabetes-Prediction-Application-Using-Machine-Learning/blob/master/Resource/pandas.jpeg" width=120>]
+### Login Interface
 
+<p align="center">
+  <img src="images/GUI 2.png" width="700"/>
+</p>
 
-### Design Flow :- 
 
+---
 
-<img src="output/design_flow.png" width="500" >
+## Output Demonstration
 
- 
-###  Block Diagram :- 
+### Safe Message Communication
 
-<img src="output/block_diagram.png" width="550" >
+<p align="center">
+  <img src="images/Output 1.png" width="850"/>
+</p>
 
-The above diagram describes cyberbullying detection framework used, it has two major parts Natural Language Processing and Machine Learning.
-#### 1. Natural Language Processing:
-In this phase, we have collected real time tweets from Twitter, extracted Whatsapp chats and Youtube comments in English and Hinglish language. This real time data contains various unnecessary characters, so before applying the machine learning algorithms, data cleaning is to be performed to prepare the data for the detection phase.
-In the pre-processing stage we remove hashtags, stopwords, numeric data, hexadecimal patterns and convert the text into lower case.It is done by using numpy with the help of vectorize functions. We manually created a list of stopwords for English and Hinglish language and applied it to remove these words from the clean data because the presence of these unnecessary words adversely a↵ects the accuracy and predictions of the model. We then applied NLP techniques like Tokenization to break raw text into words called as tokens, Lemmatization to remove a given word to its root word and vectorization for converting raw text into vectors or a number.
-After pre-processing we splitted the data into training and testing data. Next, we applied two important features selection of text, which are:
-- Count Vectorizer
-- Term frequency- Inverse frequency.
+### Blocked Cyberbullying Detection Output
 
-#### 2. Machine Learning:
-In this second phase, we applied various machine learning approaches like Linear SVC, Decisison Tree, Naive Bayes, Bagging classifier, Logistic Regression, Random Forest, MultinomailNB, K Neighbours Clas- sifier and Adaboost classifier to train the model and find the accuracy for each model based on the literature survey we conducted. We also calculated F1 score for evaluation purposes and improved accu- racy by repeating the stages again. We wanted to select best pair between feature selection like TF-IDF and count vectorizer and machine learning model. For this we have done a comparative analysis between count vectorizer and TF-IDF, from this comparative analysis we found out the best pair which has higher accuracy and less prediction time and made its pickle file. After that we passed the testing data to the models to compare the accuracy of various algorithms with each other. After following these stages, our model is able to predict whether the text enter is toxic i.e bullying and harmful for the society or non - toxic i.e non-bullying in Hinglish language.
+<p align="center">
+  <img src="images/Output 2.png" width="850"/>
+</p>
 
-### Technical aspects
+---
 
-#### Data Cleaning
+## Model Evaluation Metrics
 
-The data is required to clean before passing through multiple ML models. as shown in Fig:4.4, this steps are necessary to removed from the data because they do not contribute for classification phase.
+### Proposed Model Accuracy Graph
 
-<img src="output/pre-processed.png" width="550" >
+<p align="center">
+  <img src="images/chatshield_existing_vs_proposed_monochrome_updated.png" width="700"/>
+</p>
 
+### Performance Comparison Graph
 
-#### Pre-processing Techniques 
+<p align="center">
+  <img src="images/chatshield_model_performance_monochrome_updated.png" width="700"/>
+</p>
 
-After cleaning the data we have applied Natural language processing techniques because the machine learning algorithm cannot work directly with the raw text that is they cannot understand the whole sentences given to it, so we transform these sentences into understandable format by using pre-processing techniques.
+---
 
-<img src="output/nlp.png" width="200" >
+## Core Features
 
-![NLP](https://user-images.githubusercontent.com/45121295/171019589-022ed154-bee4-49f3-9eee-e4fc4515f909.gif)
+### Real-Time Message Monitoring
 
-#### Feature Selection
+* Continuously monitors all incoming and outgoing chat messages before transmission.
 
-This technique helps to measure the quality of the resulting vector representations. This works with similar words that tend to close with words that can have multiple degrees of similarity. Vectorization is performed prior to sending the training and testing data set through the ML models.
+### Cyberbullying Detection
 
-![feature_selection](https://user-images.githubusercontent.com/45121295/171020935-b089094b-38d0-4542-86ff-6b4374f440db.gif)
+* Detects harmful, abusive, offensive, and threatening text instantly.
 
-### Result and Discussion
+### Hinglish Language Support
 
-#### Comparative Analysis between two Feature Selections methods
+* Recognizes bullying messages written in mixed Hindi-English (Hinglish) format.
+* Example: “Tu bahut useless hai”, “Pagal idiot”, etc.
 
-We are doing a comparative analysis between two feature extraction techniques like count vectorization CV and term frequency inverse frequency in document TF-IDF with few algorithms like Logistic Regression, Random Forest Classifier, Linear SVC, and KNeighbors Classifiers as shown in figure below.
+### Slang & Abbreviation Recognition
 
-<img src="output/comparision.png" width="440" >
+* Detects offensive slang, short forms, and masked abusive words.
+* Example: "idi0t", "stup!d", "f00l".
 
-#### Comparison of Algorithms with count vectorizer
+### Dataset-Driven Filtering
 
-<img src="output/cv.png" width="550" >
+* Compares chat messages against a structured cyberbullying/offensive dataset.
 
-#### Comparison of Algorithms with Term Frequency Inverse Document Frequency
+### Bullying Type Classification
 
-<img src="output/tf-idf.png" width="550" >
+* Categorizes detected bullying into types such as:
 
-#### Findings 
+  * Harassment
+  * Toxicity
+  * Insult
+  * Threat
+  * Hate Speech
 
-TF-IDF gives slightly better accuracy then CV because it not only aims on the frequency of tokens present in the corpus, but also provides the importance on the tokens. We can remove the tokens that are less important for analysis, hence it makes the our training model e�cient and less complex by reducing the our dimensions of input.
+### Message Blocking Mechanism
 
-#### Classification and Building models for Hinglish Language
+* Automatically blocks flagged messages before delivery.
 
-<img src="output/hinglish.png" width="550" >
+### Instant Warning Alerts
 
-### Design and Architecture of Chat Prediction Service
+* Sends warning notifications to both sender and receiver.
 
-<img src="output/prediction_service.png" width="550" >
+### User-Friendly GUI
 
-We have made a service wrapper using flask for our prediction model. Now whenever the group of users write or post the messages in format of text, it will request our service wrapper and our service wrapper will load the Machine learning model which is in pickle file. this ML model will predict whether the given message is bullying or non-bullying i.e either 1 or 0 and will return to the service wrapper. Later our service wrapper will respond to the users, whether the message enter is bullying or non-bullying.
+* Interactive chat interface with modern design.
 
-https://user-images.githubusercontent.com/45121295/171021596-d0ec356a-b610-4d43-b4c8-6d3b5c2e4f72.mov
+### Client-Server Communication
 
-We have tested our prediction service using flask on postman. The request and response body we have used is shown in the about video
+* Supports real-time multi-user communication through socket programming.
 
-### User Interface Design
+### Authentication Module
 
-We have created a Multi Group chat application using python sockets and Tkinder GUI. It has the functionalities to create room or join room using room Id and send messages within a room.
+* Login/Register system for secure user access.
 
-#### Non-Bullying Flow
- 
-Whenever the user posts a message in the chat, our prediction service will the load the model and if the text enter is categorized as non-bullying then text or messages will be displayed on the chat screen as shown in the video below.
+---
 
-#### Bullying Flow
+## Workflow
 
-Whenever the user posts a message in the chat, our prediction service will load the model and if the text enter is categorized as bullying, then the message will be not displayed on the chat screen, the sender will get the warning as Stop bullying people and behave decently and the receiver will not receive the bullying message. Instead, they will be informed that a bullying message has been detected it and it is hidden as shown in the video below.
+1. User enters message in chat interface
+2. System preprocesses text input
+3. Hinglish/slang normalization applied
+4. Message checked against bullying dataset
+5. Classification logic determines bullying type
+6. If harmful:
 
-https://user-images.githubusercontent.com/45121295/171021974-c23572c2-2a20-4149-80b0-75192d85e5a4.mov
+   * Message blocked
+   * Alert displayed
+   * Type identified
+7. Else:
 
-### Installation :- 
+   * Message delivered successfully
 
-- Clone this repository and unzip it.
-- Begin a new virtual environment with Python 3 and activate it.
-- Install the required packages using pip install -r requirements.txt.
-- First in the code folder run the .ipynb file and generate all the pickle file in it.
-- then in the service_testing folder to run the prediction service wrapper execute the command: flask run.
-- then in the safechat folder to run the group chat application first run server.py. then client.py, and then run client_GUI.py. 
+---
 
+## Technology Stack
 
-###  Made with &nbsp;❤️ by  [Karan Shah](https://karanshah1910.tech/) , [keval rajpara](https://in.linkedin.com/in/keval-rajpara) , [Chaitaniya phadhtare](https://github.com/ChaitanyaPhadtare)
+| Technology         | Purpose                     |
+| ------------------ | --------------------------- |
+| Python             | Core Programming Language   |
+| Tkinter            | GUI Development             |
+| Socket Programming | Client-Server Communication |
+| Dataset Filtering  | Text Analysis               |
+| Git/GitHub         | Version Control             |
+| VS Code            | Development Environment     |
 
+---
 
+## Installation & Setup
 
+### Clone Repository
 
+```bash
+git clone https://github.com/your-username/chatshield-cyberbullying-detection-system.git
+```
 
+### Navigate to Project Folder
+
+```bash
+cd chatshield-cyberbullying-detection-system
+```
+
+### Run Server
+
+```bash
+python server.py
+```
+
+### Run Client
+
+```bash
+python clientgui.py
+```
+
+---
+
+## Future Enhancements
+
+* Machine Learning Based Detection
+* NLP Sentiment Analysis
+* Voice Chat Moderation
+* Cloud Deployment
+* Admin Monitoring Dashboard
+* Database Integration
+* Mobile Application Support
+
+---
+
+## Author
+
+**Siva Rama Krishna Naidu**
+Computer Science Engineering Student
+
+---
+
+## License
+
+This project is developed for academic, educational, and research purposes.
