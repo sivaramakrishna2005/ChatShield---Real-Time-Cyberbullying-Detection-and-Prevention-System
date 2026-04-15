@@ -10,10 +10,10 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10-blue?style=for-the-badge&logo=python"/>
-  <img src="https://img.shields.io/badge/GUI-Tkinter-green?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Socket-Programming-orange?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
-  <img src="https://img.shields.io/badge/License-Academic-lightgrey?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/GUI-Tkinter-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Socket-Programming-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Status-Completed-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/License-Academic-blue?style=for-the-badge"/>
 </p>
 
 </div>
